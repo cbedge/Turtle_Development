@@ -1,1 +1,25 @@
-This repository contains code to do various things with long term turtle data. Example data will be provided in the near future.
+This repository contains code to do various things with long term turtle data. Example data in the data folder.
+
+Currently the code will calculate the date a specified development stage is reached and the stage reached at a specified date. More flexibility will come
+
+To run the code on your own data the column names must match those in the example data
+
+To run two files are needed in the following format
+
+nestdate.csv must contain the following fields populated with data
+turtleID: the unique ID for a turtle, any format
+nestdate: the dat the clutch is laid in julian
+nestyear: the year the clutch was laid
+nestdate.csv must contain the collowing empty columns
+dateat6: will be populated with julian date when development =>6
+dateat11: will be populated with julian date when development =>11 
+dateat20: will be populated with julian date when development =>20
+stageat244: development stage at julian day 244
+stageat258: development stage at julian day 258
+stageat273: development stage at julian day 273
+
+
+develop.csv contains the following fields populated with data
+year: year
+julian: julian day
+dev: amount of development that day
