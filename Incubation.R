@@ -16,11 +16,11 @@ for (i in 1:length(nestdate$turtleID)){
   while (current.sum <=6) {
     current.sum <- current.sum + develop$dev[develop$julian==a & develop$year==b]
     a <- a+1
-    if(a==274){
+    if(a==274){#check if the last possible date is exceeded and if so change current.sum
       current.sum <-50
     }
   }
-  if(current.sum==50){
+  if(current.sum==50){#if last possible date is exceeded then return ND if not resturn the date
     nestdate$dateat6[i] <- "ND"
   }else{
     nestdate$dateat6[i] <- a-1
@@ -32,11 +32,11 @@ for (i in 1:length(nestdate$turtleID)){
   while (current.sum <=11) {
     current.sum <- current.sum + develop$dev[develop$julian==a & develop$year==b]
     a <- a+1
-    if(a==274){
+    if(a==274){#check if the last possible date is exceeded and if so change current.sum
       current.sum <-50
     }
   }
-  if(current.sum==50){
+  if(current.sum==50){#if last possible date is exceeded then return ND if not resturn the date
     nestdate$dateat11[i] <- "ND"
   }else{
     nestdate$dateat11[i] <- a-1
@@ -48,11 +48,11 @@ for (i in 1:length(nestdate$turtleID)){
   while (current.sum <=20) {
     current.sum <- current.sum + develop$dev[develop$julian==a & develop$year==b]
    a <- a+1
-   if(a==274){
+   if(a==274){#check if the last possible date is exceeded and if so change current.sum
      current.sum <-50
    }
   }
-  if(current.sum==50){
+  if(current.sum==50){#if last possible date is exceeded then return ND if not resturn the date
     nestdate$dateat20[i] <- "ND"
   }else{
     nestdate$dateat20[i] <- a-1
