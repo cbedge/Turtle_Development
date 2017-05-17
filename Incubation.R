@@ -3,8 +3,8 @@
 
 
 setwd("C:/Users/christopher.edge/Documents/Github/Turtle_Development/data") #set the working directory to where your data are
-nestdate <- read.csv(file = "nestdate_M.csv", header=T) #File with turtle ID and nest dates
-develop <- read.csv(file = "develop_M.csv", header=T) #File with daily development rate
+nestdate <- read.csv(file = "nestdate.csv", header=T) #File with turtle ID and nest dates
+develop <- read.csv(file = "develop.csv", header=T) #File with daily development rate
 names(develop)
 names(nestdate)
 
